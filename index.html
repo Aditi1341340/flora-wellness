@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flora Wellness | Holistic Nutrition & Diet Guidance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo">🌿 Flora Wellness</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="diet-guide.html">Diet Guide</a></li>
+      <li><a href="contact.html">Book Consultation</a></li>
+      <li><a href="contact.html" class="nav-pill">Get Started</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Simple, Science-Backed Nutrition for Everyday Living</h1>
+  <p>Personalized nutrition plans, evidence-based guides, and expert consultations to help you feel your best.</p>
+  <div class="hero-buttons">
+    <a href="diet-guide.html" class="btn btn-cream">Explore 3D Meal Guide</a>
+    <a href="contact.html" class="btn btn-outline">Book a Session</a>
+  </div>
+</section>
+
+<div class="calculator-wrapper">
+  <div class="calculator-card">
+    <h2>🌿 Daily Protein Intake Calculator</h2>
+    <div class="calc-grid">
+      <div>
+        <div class="form-group">
+          <label for="weight">Body Weight (in kg)</label>
+          <input type="number" id="weight" value="60" min="25" max="250">
+        </div>
+        <div class="form-group" style="margin-bottom:0;">
+          <label for="activity">Activity Level</label>
+          <select id="activity">
+            <option value="0.8">Sedentary (0.8g/kg)</option>
+            <option value="1.2">Lightly Active (1.2g/kg)</option>
+            <option value="1.5" selected>Moderately Active (1.5g/kg)</option>
+            <option value="1.8">Highly Active (1.8g/kg)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="calc-result-box">
+        <small>Recommended Daily Protein:</small>
+        <div class="protein-number" id="proteinValue">90 g / day</div>
+        <span>to support your active lifestyle.</span>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-green" onclick="calculateProtein()">Calculate Daily Protein</button>
+  </div>
+</div>
+<!-- Holistic Nutrition Info Section (Below Protein Calculator) -->
+<section class="info-section">
+  <div class="info-grid">
+    <div class="info-text">
+      <h2>Nourish Your Body with Mindful Nutrition</h2>
+      <p>
+        At <strong>Flora Wellness</strong>, we believe sustainable health begins with simple,
+        whole-food habits rather than restrictive fad diets. Understanding your daily protein
+        and macronutrient balance supports steady energy, muscle recovery, and long-term vitality.
+      </p>
+      <p>
+        Explore our interactive 3D Diet Guide to inspect balanced meal breakdowns, or schedule a
+        one-on-one session with our nutrition specialists for personalized guidance.
+      </p>
+    </div>
+
+    <div class="info-images">
+      <img src="C:\Users\Aditi Suryawanshi\Desktop\flora\pictures\1.jpg" alt="Fresh Whole Foods and Holistic Nutrition" class="home-feature-img">
+      <img src="C:\Users\Aditi Suryawanshi\Desktop\flora\pictures\2.jpg" alt="Balanced Daily Protein Meal Prep" class="home-feature-img">
+    </div>
+  </div>
+</section>
+<footer>
+  <p>&copy; 2026 Flora Wellness. Holistic Nutrition & Preventative Health Platform.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

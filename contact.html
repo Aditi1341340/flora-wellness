@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Consultation | Flora Wellness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo">🌿 Flora Wellness</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="diet-guide.html">Diet Guide</a></li>
+      <li><a href="contact.html" class="active">Book Consultation</a></li>
+      <li><a href="contact.html" class="nav-pill">Get Started</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="statusBanner" class="status-banner"></div>
+
+<div class="container">
+  <div class="page-header">
+    <h1>Book a Wellness Consultation</h1>
+    <p>Connect with our experts or send us a general inquiry.</p>
+  </div>
+
+  <div class="forms-grid">
+    <!-- Left Card: Schedule Appointment -->
+    <div class="form-card">
+      <h2>1. Schedule Appointment</h2>
+      <p>Select your preferences to book a slot with our wellness experts.</p>
+      <form onsubmit="handleFormSubmit(event, 'Success! Your wellness consultation request has been saved.')">
+        <div class="form-group">
+          <label for="full_name">Full Name</label>
+          <input type="text" id="full_name" placeholder="Aditi Suryawanshi" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="aditi.s@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+91 98765 43210" required>
+        </div>
+        <div class="form-group">
+          <label for="goal">Primary Wellness Goal</label>
+          <select id="goal" required>
+            <option value="Nutrition & Meal Planning">Nutrition & Meal Planning</option>
+            <option value="High-Protein Fitness Diet">High-Protein Fitness Diet</option>
+            <option value="Healthy Weight Management">Healthy Weight Management</option>
+            <option value="Energy & Lifestyle Routine">Energy & Lifestyle Routine</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Consultation Date</label>
+          <input type="date" id="date" required>
+        </div>
+        <button type="submit" class="btn btn-green">Confirm Booking ↗</button>
+      </form>
+    </div>
+
+    <!-- Right Card: Send a General Inquiry -->
+    <div class="form-card">
+      <h2>2. Send a General Inquiry</h2>
+      <p>Have a question about our services? Leave us a message.</p>
+      <form onsubmit="handleFormSubmit(event, 'Thank you! Your wellness inquiry has been submitted.')">
+        <div class="form-group">
+          <label for="inq_name">Name</label>
+          <input type="text" id="inq_name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="inq_email">Email</label>
+          <input type="email" id="inq_email" placeholder="your.email@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="7" placeholder="How can we help you? Describe your questions..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-green">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Flora Wellness. Holistic Nutrition & Preventative Health Platform.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
